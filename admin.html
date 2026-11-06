@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Owner Console — DispatchOne</title><link rel="stylesheet" href="/styles.css"><script src="/admin.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">D<span>1</span></span><span>DISPATCH<span class="brand-light">ONE</span></span></a><span class="top-status">OWNER CONSOLE</span></header>
+  <main class="dashboard">
+    <div class="dashboard-header"><div><h1>Owner console</h1><p id="welcome">Checking owner access…</p></div><button class="small-button" id="logout">Sign out</button></div>
+    <section class="section">
+      <h2>Create a tester account</h2>
+      <p>Only give accounts to people you trust. Tester accounts can access the private preview, not this owner console.</p>
+      <form id="tester-form" class="inline-form">
+        <div><label for="tester-username">Username</label><input id="tester-username" required minlength="3" maxlength="24" pattern="[A-Za-z0-9_-]+"></div>
+        <div><label for="tester-password">Temporary password</label><input id="tester-password" type="password" required minlength="10"></div>
+        <button type="submit">Create tester</button>
+      </form>
+      <p class="message" id="message" role="status"></p>
+    </section>
+    <section class="section">
+      <h2>Tester accounts</h2>
+      <ul class="list" id="tester-list"><li>Loading…</li></ul>
+    </section>
+    <section class="section">
+      <h2>Launch controls</h2>
+      <p>Public visitors currently see only the countdown page. Private features remain under development.</p>
+      <p><strong>Launch target:</strong> 1 January 2027, 12:00 AM Sydney time.</p>
+      <a class="back-link" href="/preview">Open private preview →</a>
+    </section>
+  </main>
+</body>
+</html>

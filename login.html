@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff Login — DispatchOne</title><link rel="stylesheet" href="/styles.css"><script src="/login.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">D<span>1</span></span><span>DISPATCH<span class="brand-light">ONE</span></span></a><span class="top-status">PRIVATE ACCESS</span></header>
+  <main class="auth-shell">
+    <section class="panel">
+      <h1>Welcome back.</h1>
+      <p>Sign in to the private DispatchOne development and testing area.</p>
+      <form id="login-form">
+        <label for="username">Username</label><input id="username" name="username" autocomplete="username" required>
+        <label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required>
+        <button class="button-wide" type="submit">Sign in</button>
+      </form>
+      <p class="message" id="message" role="status"></p>
+      <a class="back-link" href="/">← Back to launch page</a>
+    </section>
+  </main>
+</body>
+</html>
